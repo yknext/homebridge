@@ -1,0 +1,708 @@
+{
+    "bridge": {
+        "name": "Homebridge",
+        "username": "CC:22:3D:E3:CE:31",
+        "port": 51826,
+        "pin": "031-45-155"
+    },
+
+    "description": "This is an example configuration file. You can use this as a template for creating your own configuration file containing devices you actually own.",
+
+    "accessories": [
+    ],
+
+    "platforms": [{
+		"platform": "cmdSwitch2",
+		"name": "CMD Switch",
+		"switches": [{
+				"name": "v+",
+				"on_cmd": "curl http://192.168.200.53:8050/key?n=24",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "v-",
+				"on_cmd": "curl http://192.168.200.53:8050/key?n=25",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "up",
+				"on_cmd": "curl http://192.168.200.53:8050/key?n=19",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "down",
+				"on_cmd": "curl http://192.168.200.53:8050/key?n=20",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "left",
+				"on_cmd": "curl http://192.168.200.53:8050/key?n=21",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "right",
+				"on_cmd": "curl http://192.168.200.53:8050/key?n=22",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "back",
+				"on_cmd": "curl http://192.168.200.53:8050/key?n=4",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "enter",
+				"on_cmd": "curl http://192.168.200.53:8050/key?n=23",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "menu",
+				"on_cmd": "curl http://192.168.200.53:8050/key?n=82",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "home",
+				"on_cmd": "curl http://192.168.200.53:8050/key?n=3",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "hdplayer",
+				"on_cmd": "curl http://192.168.200.53:8050/app_start?pn=com.xiaomi.mitv.mediaexplorer",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "fenghuang",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.118:2191",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "CCTV-1高清",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.184:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "CCTV-2高清",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.1.23:6000",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "CCTV-3高清",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.1.11:2223",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "CCTV-5高清",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.1.12:2224",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "CCTV-6高清",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.1.13:2226",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "CCTV-7高清",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.1.67:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "CCTV-8高清",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.1.14:2225",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "CCTV-9高清",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.1.24:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "CCTV-10高清",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.1.28:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "CCTV-12高清",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.1.30:8124",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "CCTV-少儿高清",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.1.29:6000",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "CCTV-5＋高清",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.1.36:8004",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "湖南卫视高清",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.88:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "江苏卫视高清",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.89:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "浙江卫视高清",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.124:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "东方卫视高清",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.123:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "北京卫视高清",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.180:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "深圳卫视高清",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.182:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "黑龙江卫视高清",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.183:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "山东卫视高清",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.168:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "CCTV-1杜比高清",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.69:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "四川卫视高清",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.169:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "影视文艺高清",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.166:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "天津卫视高清",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.167:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "湖北卫视高清",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.250:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "广东卫视高清",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.181:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "城市大明星高清",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.94:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "CDTV1高清",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.1.210:2178",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "峨眉电影HD",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.1.54:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "少儿才艺大赛",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.1.189:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "四川广场舞大赛",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.1.190:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "熊猫新闻高清",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.1.112:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "SCTV2-HD",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.1.101:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "SCTV3-HD",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.1.102:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "熊猫直播间",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.126:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "CCTV-4",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.60:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "CCTV-11",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.3:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "CCTV-新闻",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.66:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "CCTV-少儿",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.67:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "CCTV-音乐",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.68:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			},{
+				"name": "花儿高清电影",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.224:1281",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "资讯新干线",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.236:1283",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "蓉城先锋",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.91:2101",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "四川卫视",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.238:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "SCTV-2",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.239:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "SCTV-3",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.240:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "SCTV-4",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.241:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "SCTV-5",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.242:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "SCTV-6",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.243:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "SCTV-7",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.244:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "SCTV-科教",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.221:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "SCTV-9",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.245:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "康巴卫视",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.125:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "峨眉电影",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.252:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "成华新闻",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.1.43:1234",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "湖南卫视",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.77:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "江苏卫视",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.72:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "浙江卫视",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.73:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "北京卫视",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.71:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "深圳卫视",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.248:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "东方卫视",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.70:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "安徽卫视",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.75:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "天津卫视",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.85:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "辽宁卫视",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.74:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "山东卫视",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.76:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "云南卫视",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.174:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "河南卫视",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.84:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "黑龙江卫视",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.87:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "江西卫视",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.83:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "贵州卫视",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.127:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "湖北卫视",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.82:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "重庆卫视",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.90:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "东南卫视",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.81:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "河北卫视",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.5:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "广东卫视",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.78:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "广西卫视",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.24:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "吉林卫视",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.86:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "陕西卫视",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.176:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "山西卫视",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.6:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "内蒙古卫视",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.8:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "青海卫视",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.192:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "宁夏卫视",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.247:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "西藏卫视",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.175:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "新疆卫视",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.194:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "甘肃卫视",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.191:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}, {
+				"name": "旅游卫视",
+				"on_cmd": "curl http://192.168.200.53:8050/cmd?url=http://192.168.200.144:10000/rtp/239.93.0.80:5140",
+				"off_cmd": "exit 1",
+				"state_cmd": "exit 1",
+				"polling": false,
+				"interval": 1
+			}
+		]
+	}
+ ]
+}
+
